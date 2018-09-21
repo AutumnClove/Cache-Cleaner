@@ -1,5 +1,4 @@
 @echo off
-mode 100
 color 0a
 :: BatchGotAdmin
 :-------------------------------------
@@ -41,12 +40,20 @@ del /s /f /q %temp%
 rd /s /q %temp%
 del /f /s /q %temp%
 rd /s /q %temp% 
+pause
+cls
 echo Done cleaning out your files now moving onto your dns, don't worry nothing important will be lost.
 pause
 cls
 ipconfig /release *
+pause
+cls
 ipconfig /renew *
+pause
+cls
 ipconfig /flushdns
-echo Done with everything
+pause
+cls
+echo Done with everything, you can exit the program now!
 pause
 cls
