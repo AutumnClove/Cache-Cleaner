@@ -45,13 +45,15 @@ cls
 echo Done cleaning out your files now moving onto your dns, don't worry nothing important will be lost.
 pause
 cls
+ipconfig /flushdns
+pause
+cls
 ipconfig /release *
 pause
 cls
 ipconfig /renew *
 pause
 cls
-ipconfig /flushdns
 pause
 cls
 echo Done with everything, you can exit the program now!
